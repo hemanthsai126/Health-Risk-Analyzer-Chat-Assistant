@@ -10,7 +10,10 @@ from pdf_utils import extract_text
 st.set_page_config(page_title="Health Risk Analyzer", page_icon="🏥", layout="wide")
 
 # --- Header ---
-st.title("🏥 Health Risk Analyzer & Chat Assistant🤖")
+st.markdown(
+    "<h1 style='text-align: center;'>🏥 Health Risk Analyzer & Chat Assistant🤖</h1>",
+    unsafe_allow_html=True
+)
 
 # --- Upload Medical PDFs ---
 st.subheader("Upload Your Medical Records (Optional)")
